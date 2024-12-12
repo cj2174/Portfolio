@@ -102,36 +102,126 @@ section {
 #skills {
   background: #a2af7f;
   color: white;
+  padding: 50px 20px;
 }
 
 .skills-container {
   display: flex;
+  justify-content: space-between; /* 양쪽 정렬 */
+  align-items: center;
   width: 100%;
   max-width: 1200px;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
 }
+
 .skills-text {
+  flex: 1;
   text-align: left;
-  margin-right: 100px;
+  margin-right: 10px;
 }
 
 .skills-text h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 80px;
   color: #fff;
-  text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0),
+  text-shadow: -1px 0 #000000, 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0),
     0 -1px rgb(0, 0, 0);
+  margin-left: 20px;
 }
 
-.skills-list ul {
-  list-style: none;
+.skills-content {
+  flex: 1;
+}
+
+.skills-list {
+  border-bottom: 1px solid #ffffff;
+}
+
+.skills-list,
+.certifications {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.skills-list ul,
+.certifications ul {
+  list-style: circle;
+  padding: 0;
+}
+
+.skills-list h3,
+.certifications h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  background-color: #574c4c;
+  padding: 5px 10px;
   display: inline-block;
+  margin-bottom: 10px;
+}
+
+.skills-list ul li,
+.certifications ul li {
+  margin-bottom: 10px;
+  padding: 3px 10px;
+}
+
+.certifications ul li {
+  color: #fff;
 }
 
 #projects {
   background: white;
   color: #000000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-text h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 80px;
+  color: #ffffff;
+  text-shadow: -1px 0 #000000, 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0),
+    0 -1px rgb(0, 0, 0);
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.project-card p {
+  font-size: 15px;
+  color: #555;
 }
 
 #contact {
