@@ -1,121 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 
 * {
-    text-decoration: none;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Nanum Gothic", sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 body {
-    line-height: 1.8;
-	scroll-behavior: smooth;
+  line-height: 1.8;
+  scroll-behavior: smooth;
 }
 
 header {
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 1000;
-	display: flex;
-	align-items: center;
-    justify-content: space-between;
-    background-color: #6C584E;
-	padding: 20px 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #6c584e;
+  padding: 20px 80px;
 }
 
 header h1 {
-	color: #FAF9EF;
-	font-size: 30px;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	margin-left: 50px;
+  color: #faf9ef;
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 50px;
 }
 
 nav {
-	display: flex;
-	gap: 50px;
+  display: flex;
+  gap: 50px;
 }
 
 nav a {
-	color: white;
-	text-decoration: none;
-	transition: color 0.3s ease, text-decoration-color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
 }
 
 nav a:hover {
-	text-decoration-color: #FAF9EF;
-	color: #cdba9f; 
+  text-decoration-color: #faf9ef;
+  color: #cdba9f;
 }
 
 section {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #about {
-	display: flex;
-	background: #f4f4f4;
-	color: #333;
-
+  display: flex;
+  background: #f4f4f4;
+  color: #333;
 }
 
 .about-container {
-	display: flex;
-	gap: 100px;
-	width: 100%;
-	align-items: center;
-	justify-content: center;
-	max-width: 1200px;
+  display: flex;
+  gap: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
 }
 
 .about-image img {
-	width: 300px;
-	height: auto;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: auto;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .about-text {
-	text-align: left;
+  text-align: left;
 }
 
 .about-text h2 {
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	margin-bottom: 20px;
-	font-size: 70px;
-	color: #fff;
-	text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+  font-size: 70px;
+  color: #fff;
+  text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0),
+    0 -1px rgb(0, 0, 0);
 }
 
 .about-text h3 {
-	margin-bottom: 30px;
-	
+  margin-bottom: 30px;
 }
 
 .about-text p {
-	line-height: 2.3;
+  line-height: 2.3;
 }
 
 #skills {
-	background: #A2AF7F;
-	color: white;
+  background: #a2af7f;
+  color: white;
 }
+
+.skills-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+}
+.skills-text {
+  text-align: left;
+  margin-right: 100px;
+}
+
+.skills-text h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 80px;
+  color: #fff;
+  text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0),
+    0 -1px rgb(0, 0, 0);
+}
+
+.skills-list ul {
+  list-style: none;
+  display: inline-block;
+}
+
 #projects {
-	background: white;
-	color: #000000;
+  background: white;
+  color: #000000;
 }
 
 #contact {
-	background: #c9c6c6;
-	color: white;
+  background: #c9c6c6;
+  color: white;
 }
 
 footer {
-	text-align: center;
-	background: #ffffff;
-	color: #261505;
-	padding: 30px 0;
-  }
+  text-align: center;
+  background: #ffffff;
+  color: #261505;
+  padding: 30px 0;
+}
