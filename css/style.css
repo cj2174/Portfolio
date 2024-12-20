@@ -8,6 +8,11 @@
   font-family: "Nanum Gothic", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   line-height: 1.8;
   scroll-behavior: smooth;
@@ -55,6 +60,11 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #about {
